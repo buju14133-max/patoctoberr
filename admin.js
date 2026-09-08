@@ -1,4 +1,4 @@
-const SUPABASE_URL = "https://svkwjbmnilzhtbnntqdf.supabase.co";
+const SUPABASE_URL = "https://svkwjbmnjlzhtbnntqdf.supabase.co";
 const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_JROamTuPH4tcdTcVffPodA_oT4byHqE";
 const ADMIN_TOKEN = "iDCU0vXvJMxVAXPtN1Lb2yJUl7aKaB-pF1rG7DLlF-8";
 const LIST_RPC = `${SUPABASE_URL}/rest/v1/rpc/admin_list_registrations`;
