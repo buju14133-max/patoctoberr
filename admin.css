@@ -22,3 +22,4 @@ th{color:#777;font-size:11px;text-transform:uppercase;letter-spacing:.08em}
 .delete{background:#241010;color:#ff6666;border:1px solid #4a1b1b;border-radius:7px;padding:8px 11px;font-size:12px;font-weight:800}
 .empty{padding:50px;text-align:center;color:#666}
 @media(max-width:600px){body{padding:18px}header{align-items:flex-start;flex-direction:column}.primary{width:100%}.toolbar{flex-direction:column}.toolbar input,.toolbar select{width:100%}.stat-card{width:100%}}
+.actions{display:flex;gap:10px;align-items:center}.secondary{background:#151515;color:#fff;border:1px solid #333;font-weight:900;padding:14px 20px;border-radius:10px}.refresh-status{color:#777;font-size:12px;margin-left:auto;order:3}@media(max-width:600px){.actions{width:100%;flex-direction:column}.actions button{width:100%}.refresh-status{order:initial;margin-left:0}.toolbar{gap:10px}}

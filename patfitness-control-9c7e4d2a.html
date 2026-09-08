@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Patfitness Registrations</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header>
+    <div>
+      <span class="eyebrow">PRIVATE DASHBOARD</span>
+      <h1>DANCE WITH PATFITNESS</h1>
+    </div>
+    <div class="actions"><button id="exportBtn" class="primary">Export CSV</button><button id="exportExcelBtn" class="secondary">Export Excel</button></div>
+  </header>
+
+  <section class="stats">
+    <div class="stat-card">
+      <span>Total Registrations</span>
+      <strong id="total">0</strong>
+    </div>
+  </section>
+
+  <section class="toolbar">
+    <div id="refreshStatus" class="refresh-status">Connecting…</div>
+    <input id="search" type="search" placeholder="Search name or phone number...">
+    <select id="filter">
+      <option value="All">All genders</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+  </section>
+
+  <section class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Gender</th>
+          <th>Phone Number</th>
+          <th>Registration Date/Time</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <div id="empty" class="empty">No registrations yet.</div>
+  </section>
+
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
