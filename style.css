@@ -333,3 +333,64 @@ body {
     padding: 30px 22px;
   }
 }
+
+
+/* Floating registration CTA */
+.floating-register {
+  position: fixed;
+  right: 26px;
+  bottom: 28px;
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 58px;
+  padding: 0 17px 0 22px;
+  border: 2px solid #39ff14;
+  border-radius: 999px;
+  background: #39ff14;
+  color: #050505;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 950;
+  letter-spacing: .08em;
+  box-shadow: 0 12px 35px rgba(0,0,0,.45), 0 0 25px rgba(57,255,20,.18);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.floating-register b {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #050505;
+  color: #39ff14;
+  font-size: 19px;
+}
+
+.floating-register:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 17px 45px rgba(0,0,0,.55), 0 0 34px rgba(57,255,20,.28);
+}
+
+.floating-register:active {
+  transform: translateY(-1px) scale(.99);
+}
+
+@media (max-width: 600px) {
+  .floating-register {
+    right: 15px;
+    bottom: 17px;
+    min-height: 52px;
+    padding: 0 13px 0 17px;
+    font-size: 12px;
+    gap: 9px;
+  }
+
+  .floating-register b {
+    width: 27px;
+    height: 27px;
+    font-size: 17px;
+  }
+}
