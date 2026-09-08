@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Dance With Patfitness — October 1st</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <img src="poster.jpg" alt="Dance With Patfitness event poster">
+    </section>
+
+    <section class="registration-section" id="register">
+      <div class="register-copy">
+        <span class="eyebrow">OCTOBER 1ST</span>
+        <h1>DANCE <span>WITH</span> PATFITNESS</h1>
+        <p>Registration is open. Secure your spot for the event.</p>
+      </div>
+
+      <form id="registrationForm" class="registration-card" novalidate>
+        <div class="field">
+          <label for="fullName">Full Name</label>
+          <input id="fullName" name="fullName" type="text" autocomplete="name"
+                 placeholder="Enter your full name" maxlength="100" required>
+          <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="field">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <small class="error" id="genderError"></small>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel"
+                 autocomplete="tel" placeholder="e.g. 08012345678" maxlength="20" required>
+          <small class="error" id="phoneError"></small>
+        </div>
+
+        <button class="register-btn" id="registerBtn" type="submit">
+          <span class="btn-text">REGISTER</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+
+        <p class="form-note">Free entry • October 1st</p>
+      </form>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="successModal" hidden>
+    <div class="success-modal" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+      <div class="success-icon">✓</div>
+      <h2 id="successTitle">You're In! 🎉</h2>
+      <p>Your registration for DANCE WITH PATFITNESS has been successfully submitted.</p>
+      <button id="doneBtn" class="done-btn">Done</button>
+    </div>
+  </div>
+
+  <div class="toast" id="errorToast" role="alert"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
